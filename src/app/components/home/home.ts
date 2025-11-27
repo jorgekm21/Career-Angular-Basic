@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
+  titulo: string = "Angular Basico"
+  activo: boolean = true
 
+  saludar = () : void => {
+    this.activo = false
+    console.log("Hola Mundo")
+  }
 }
