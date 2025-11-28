@@ -9,9 +9,36 @@ import { Component } from '@angular/core';
 export class Home {
   titulo: string = "Angular Basico"
   activo: boolean = true
+  mostrarTitulo: boolean = false
+  productos = [
+    {
+      "nombre": "Helado",
+      "precio": 300,
+      "categoria": "Dulces"
+    },
+    {
+      "nombre": "Telefono",
+      "precio": 5000,
+      "categoria": "Tecnologia"
+    },
+    {
+      "nombre": "Nevera",
+      "precio": 5800,
+      "categoria": "Linea Blanca"
+    }
+  ]
 
   saludar = () : void => {
     this.activo = false
     console.log("Hola Mundo")
+  }
+
+  toggleElTitulo = () : void => {
+    if (this.mostrarTitulo) {
+      this.mostrarTitulo = false
+    }
+    else {
+      this.mostrarTitulo = true
+    }
   }
 }
