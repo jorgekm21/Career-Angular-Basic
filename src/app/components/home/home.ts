@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgClass } from '@angular/common';
+import { Validator } from '../../services/validator'
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,11 @@ import { NgClass } from '@angular/common';
   styleUrl: './home.css',
 })
 export class Home {
+
+  constructor(private validator: Validator){
+
+  }
+
   titulo: string = "Angular Basico"
   activo: boolean = true
   mostrarTitulo: boolean = false
