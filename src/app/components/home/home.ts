@@ -14,30 +14,14 @@ export class Home {
 
   }
 
-  titulo: string = "Angular Basico"
-  activo: boolean = true
-  mostrarTitulo: boolean = false
-  productos = [
-    {
-      "nombre": "Helado",
-      "precio": 300,
-      "categoria": "Dulces"
-    },
-    {
-      "nombre": "Telefono",
-      "precio": 5000,
-      "categoria": "Tecnologia"
-    },
-    {
-      "nombre": "Nevera",
-      "precio": 5800,
-      "categoria": "Linea Blanca"
-    }
-  ]
-
   tema = {
     "dificultad": "baja"
   }
+
+  titulo: string = "Angular Basico"
+  activo: boolean = true
+  mostrarTitulo: boolean = false
+  
 
   saludar = () : void => {
     this.activo = false

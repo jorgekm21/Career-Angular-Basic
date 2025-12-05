@@ -1,1 +1,20 @@
-<p>ciclo-vida works!</p>
+<div class="container">
+    <table id="tablaProductos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Categoria</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (producto of productos; track $index) {
+                <tr>
+                    <td>{{producto.nombre}}</td>
+                    <td>{{producto.precio}}</td>
+                    <td>{{producto.categoria}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

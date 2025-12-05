@@ -15,4 +15,22 @@ export class CicloVida  implements OnInit, OnDestroy{
     console.log("Se cargo el componente")
   }
 
+  productos = [
+    {
+      "nombre": "Helado",
+      "precio": 300,
+      "categoria": "Dulces"
+    },
+    {
+      "nombre": "Telefono",
+      "precio": 5000,
+      "categoria": "Tecnologia"
+    },
+    {
+      "nombre": "Nevera",
+      "precio": 5800,
+      "categoria": "Linea Blanca"
+    }
+  ]
+
 }
